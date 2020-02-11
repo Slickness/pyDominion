@@ -1,9 +1,10 @@
 # pyDominion
 making a copy of the game dominion
 
-#### todo
+#### TODO
 * [ ] create class for cards
-* [ ] create deck class
-    * [ ] add card to deck
-    * [ ] remove card from deck
-    * [ ] shuffle deck
+* [x] create deck class
+    * [x] add card to deck
+    * [x] draw card from top of deck
+    * [x] remove card from deck
+    * [x] shuffle deck
