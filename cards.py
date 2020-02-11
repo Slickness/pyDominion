@@ -13,7 +13,7 @@ class Deck():
         if isinstance(card, Card):
             self.deck.append(card)
 
-    def DrawCard(self):
+    def drawCard(self):
         return self.deck.pop(0)
     
     def shuffle(self):
