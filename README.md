@@ -17,4 +17,6 @@ making a copy of the game dominion
         * [x] discard to pile and shuffle pile
         * [x] draw card from pile to hand
         * [x] draw new hand of 5 card
-    
+    * let game class handle events, but have a class to deal with the events
+
+* [ ] tkinter for GUI
