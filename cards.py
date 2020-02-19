@@ -2,25 +2,39 @@
 import random
 
 class Card():
+<<<<<<< HEAD
     def __init__(self, name, kind, cost = 0, value = 0, action = {}):
+=======
+    def __init__(self, name, kind, cost = 0, value = 0):
+>>>>>>> d32d16ce270302f928d1ea9795a5f84fbe947f17
         self.cost = cost
         self.name = name
         self.kind = kind
         self.value = value
+<<<<<<< HEAD
         self.action = action
+=======
+>>>>>>> d32d16ce270302f928d1ea9795a5f84fbe947f17
 
 
 class Deck():
     def __init__(self):
         self.deck = []
+<<<<<<< HEAD
         self.size = len(self.deck)
+=======
+>>>>>>> d32d16ce270302f928d1ea9795a5f84fbe947f17
     
     def add(self, card):
         if isinstance(card, Card):
             self.deck.append(card)
 
     def drawCard(self):
+<<<<<<< HEAD
         return self.deck.pop(-1)
+=======
+        return self.deck.pop(0)
+>>>>>>> d32d16ce270302f928d1ea9795a5f84fbe947f17
     
     def shuffle(self):
         random.shuffle(self.deck)
@@ -38,6 +52,7 @@ gold = Card("Gold", "T", 6, 3)
 estate = Card("Estate", "V", 2, 1)
 duchy = Card("Duchy", "V", 5, 3)
 province = Card("Provice", "V", 8, 6)
+<<<<<<< HEAD
 curse = Card("curse", "V", 0, -1)
 
 decks = [
@@ -68,3 +83,6 @@ decks = [
     Card("Workshop", "A", 3, 0, {"Gain": 4}),
 ]
 
+=======
+curse = Card("curse", "V", 0, -1)
+>>>>>>> d32d16ce270302f928d1ea9795a5f84fbe947f17

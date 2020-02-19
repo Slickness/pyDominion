@@ -58,6 +58,7 @@ class Player():
             self.pile.add(copy.deepcopy(cards.estate))
         self.pile.shuffle()
     
+<<<<<<< HEAD
     def finalScore(self):
         score = 0
         decks = [self.pile.deck, self.discard.deck, self.hand.deck]
@@ -70,6 +71,9 @@ class Player():
                         score += card.value
 
         return score
+=======
+  
+>>>>>>> d32d16ce270302f928d1ea9795a5f84fbe947f17
 # testing out the player cll
 
 
@@ -77,4 +81,8 @@ test = Player("randy")
 
 for card in test.hand.deck:
     print (card.name)
+<<<<<<< HEAD
 print (test.finalScore())
+=======
+print (test.money)
+>>>>>>> d32d16ce270302f928d1ea9795a5f84fbe947f17
