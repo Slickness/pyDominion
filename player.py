@@ -58,7 +58,18 @@ class Player():
             self.pile.add(copy.deepcopy(cards.estate))
         self.pile.shuffle()
     
-  
+    def finalScore(self):
+        score = 0
+        decks = [self.pile.deck, self.discard.deck, self.hand.deck]
+        for pile in decks:
+            for card in pile:
+                if card.kind == "V":
+                    if card.name == "Gardens":
+                        score += int((self.pile.size + self.discard.size + self.hand.size)/10)
+                    else:
+                        score += card.value
+
+        return score
 # testing out the player cll
 
 
@@ -66,4 +77,4 @@ test = Player("randy")
 
 for card in test.hand.deck:
     print (card.name)
-print (test.money)
+print (test.finalScore())
