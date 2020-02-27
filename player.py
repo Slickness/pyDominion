@@ -77,8 +77,4 @@ test = Player("randy")
 
 for card in test.hand.deck:
     print (card.name)
-<<<<<<< HEAD
 print (test.finalScore())
-=======
-print (test.money)
->>>>>>> d32d16ce270302f928d1ea9795a5f84fbe947f17
