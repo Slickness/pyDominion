@@ -72,9 +72,9 @@ class Player():
         return score
 # testing out the player cll
 
+if __name__ == "__main__":
+    test = Player("randy")
 
-test = Player("randy")
-
-for card in test.hand.deck:
-    print (card.name)
-print (test.finalScore())
+    for card in test.hand.deck:
+        print (card.name)
+    print (test.finalScore())
